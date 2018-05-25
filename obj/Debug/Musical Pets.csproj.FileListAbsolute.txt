@@ -1,0 +1,7 @@
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\bin\Debug\Musical Pets.exe.config
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\bin\Debug\Musical Pets.exe
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\bin\Debug\Musical Pets.pdb
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\obj\Debug\Musical Pets.csprojResolveAssemblyReference.cache
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\obj\Debug\Musical Pets.csproj.CoreCompileInputs.cache
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\obj\Debug\Musical Pets.exe
+C:\Users\WeCanCodeIT\source\repos\Musical Pets\Musical Pets\obj\Debug\Musical Pets.pdb
