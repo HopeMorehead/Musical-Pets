@@ -26,9 +26,7 @@ namespace Musical_Pets
                 {
                     saveExit = true;
                     Console.WriteLine("Bye Bye");
-                    //Environment.Exit(0) terminates this 
-                    //process and gives the underlying operating system the specified exit code. 
-                    //It is more generally used in console applications.
+                  
                     Environment.Exit(0);
                 }
 
@@ -45,14 +43,34 @@ namespace Musical_Pets
                     for (int index = 0; index < dogs.Length; index++)
                     {
                         dogs[index] = Console.ReadLine();
+
+                        for (int j = 0; j < dogs.Length; j++)
+                        {
+                            if (copyDogs[j] == dogs[index])
+                                Console.WriteLine("machtes found"+dogs[index]+""+index);
+                           
+                        }
+                    
+
+
+
                         copyDogs[index] = dogs[index];
+
+
+
+
+
+
                     }
                     Console.WriteLine(copyDogs.Length);
 
                     for (int index = 4; index < copyDogs.Length; index++)
                     {
-                        copyDogs[index] = Console.ReadLine();
+                        copyDogs[index] = Console.ReadLine().ToLower();
                     }
+
+                    Console.WriteLine("");
+
                     Console.WriteLine(copyDogs[0]);
                     Console.WriteLine(copyDogs[1]);
                     Console.WriteLine(copyDogs[2]);
@@ -61,6 +79,36 @@ namespace Musical_Pets
                     Console.WriteLine(copyDogs[5]);
                     Console.WriteLine(copyDogs[6]);
                     Console.WriteLine(copyDogs[7]);
+                  
+                    string[] dog4 = copyDogs;
+                    string[] samedogarray = new string[8];
+                    for (int index = 0; index < dog4.Length; index++)
+                    {
+                        Console.WriteLine(copyDogs[index].ToCharArray());
+
+                        foreach (Char c in dog4[index])
+                            Console.WriteLine(c.ToString());
+
+                        for (int j = 0; j < dog4.Length; j++)
+                        {
+                            if (dog4[j]== dog4[index])
+                                Console.WriteLine("no");
+                            else
+                                Console.WriteLine("yes");
+                        }
+                       
+
+                    }
+
+
+
+
+
+
+
+
+
+
                     //   if (dogs[0] == null)
                     //  {
                     //      Console.WriteLine("null");
@@ -69,23 +117,32 @@ namespace Musical_Pets
                     // {
                     //   Console.WriteLine("not null");
                     //  Console.WriteLine(dogType);
-                    string[] dog4 = copyDogs;
-                    string[] samedogarray = new string[8];
-                    for (int index = 0; index < dog4.Length; index++)
-                    {
-                        Console.WriteLine(dog4[0].ToCharArray());
-                        //Char dog5=Convert.ToChar(dog4[0]);
 
-                        foreach (Char c in dog4[0])
-                            Console.WriteLine(c.ToString());
-                        if (dog4[0] == dog4[1])
-                        {
 
-                            Console.WriteLine("youcan't pick the same dog");
-                            samedogarray[0] = dog4[1];
-                        }
-                    }
-                    Console.WriteLine($"added to seprate array{dog4[1]}");
+
+
+                    //Environment.Exit(0) terminates this 
+                    //process and gives the underlying operating system the specified exit code. 
+                    //It is more generally used in console applications.
+
+
+
+
+
+
+
+
+
+
+
+                    //    if (dog4[0] == dog4[1])
+                    //    {
+
+                    //        Console.WriteLine("youcan't pick the same dog");
+                    //        samedogarray[0] = dog4[1];
+                    //    }
+                    //}
+                    //Console.WriteLine($"added to seprate array{dog4[1]}");
 
 
                     Console.ReadKey();
@@ -95,13 +152,7 @@ namespace Musical_Pets
             
          }
 
-        public int myMethod() {
-            int[] n = { 1, 2, 3 };
-            int total = n[0] + n[1] + n[2];
-            string total1 = $"{n[0]} + {n[1] }+ {n[2]}={total}";
-
-            return total;
-                 }
+      
         
 
 
